@@ -54,3 +54,32 @@
 .expect-note{max-width:690px;margin:23px auto 0;padding:15px 18px;border-left:2px solid #d9b47780;background:#d9b4770a;text-align:left;color:#e9e3d49c;font:12px/1.7 "DM Sans",sans-serif}
 @media(max-width:700px){.what-to-expect{padding:58px 5vw 62px}.what-to-expect>h2{margin-bottom:23px}.connection-accordion summary{gap:13px;padding:18px 16px;min-height:84px}.accordion-symbol{width:38px;height:38px;flex-basis:38px}.accordion-label strong{font-size:19px}.accordion-label small{font-size:11px}.accordion-content{padding:0 17px 19px}.expect-grid{grid-template-columns:1fr;gap:0;padding-top:13px}.expect-grid>div,.expect-grid>div:first-child,.expect-grid>div:last-child{padding:17px 2px;border-right:0;border-bottom:1px solid #d9b47730}.expect-grid>div:last-child{border-bottom:0}.expect-grid h3{margin:7px 0}.expect-note{margin-top:14px;padding:12px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){.connection-accordion,.accordion-toggle,.accordion-toggle span{transition:none}.accordion-content{animation:none}}
+
+
+/* A quieter, human-first practitioner introduction. */
+.practitioner-directory{background:#f1ecdf;color:#25342d;padding:78px 8vw 62px}
+.practitioner-profile{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.03fr) minmax(280px,.97fr);align-items:center;gap:clamp(34px,6vw,76px)}
+.practitioner-gallery{min-width:0}
+.gallery-frame{position:relative;aspect-ratio:4/4.5;max-height:520px;overflow:hidden;border-radius:4px 90px 4px 4px;background:#d9d2c2;box-shadow:0 18px 50px #27382c1c}
+.gallery-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;opacity:0;transform:scale(1.025);transition:opacity .55s ease,transform 1.1s ease}
+.gallery-image.is-active{opacity:1;transform:scale(1)}
+.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border:1px solid #fff9;background:#17231d75;color:#fff;border-radius:50%;font:28px/1 "Cormorant Garamond",serif;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(8px);transition:background .2s}
+.gallery-arrow:hover{background:#17231dd9}
+.gallery-prev{left:14px}.gallery-next{right:14px}
+.gallery-dots{position:absolute;left:0;right:0;bottom:17px;display:flex;justify-content:center;gap:8px}
+.gallery-dot{width:7px;height:7px;padding:0;border:1px solid #fff;background:#ffffff70;border-radius:50%;cursor:pointer;transition:width .25s,background .25s}
+.gallery-dot.is-active{width:22px;border-radius:8px;background:#fff}
+.practitioner-intro{padding:10px 0}
+.practitioner-intro .overline{color:#9b784b;margin:0 0 12px}
+.practitioner-intro h2{font:500 clamp(38px,4.5vw,54px)/1 "Cormorant Garamond",serif;color:#25342d;margin:0 0 8px}
+.practitioner-caption{font:italic 18px "Cormorant Garamond",serif;color:#9b784b;margin:0 0 24px}
+.practitioner-intro .practitioner-bio{max-width:390px;font:15px/1.85 "DM Sans",sans-serif;color:#58645b;margin:0 0 27px}
+.practitioner-intro .profile-book-button{display:inline-flex;align-items:center;gap:24px;padding:13px 22px;border-radius:30px;background:#263b30;color:#f8f1e4;font:600 13px "DM Sans",sans-serif;transition:background .2s,transform .2s}
+.practitioner-intro .profile-book-button:hover{background:#3b5746;transform:translateY(-2px)}
+.practitioner-intro .profile-link{display:block;width:max-content;margin-top:17px;color:#8b704b;font:13px "DM Sans",sans-serif;border-bottom:1px solid #bda77e;padding-bottom:5px}
+.practitioner-intro .profile-link span{margin-left:8px}
+.practitioner-directory .directory-next{max-width:980px;margin:36px auto 0;padding:20px 0 0;border-top:1px solid #25342d20;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.practitioner-directory .directory-next p{margin:0;color:#72796f;font:italic 17px "Cormorant Garamond",serif}
+.practitioner-directory .next-button{display:inline-flex;align-items:center;gap:12px;padding:10px 0;color:#536b5a;font:600 12px "DM Sans",sans-serif;border-bottom:1px solid #a9b09f}
+@media(max-width:720px){.practitioner-directory{padding:56px 6vw 44px}.practitioner-profile{grid-template-columns:1fr;gap:25px;max-width:480px}.gallery-frame{aspect-ratio:4/4.1;max-height:470px;border-top-right-radius:68px}.practitioner-intro{padding:0 2px}.practitioner-intro h2{font-size:43px}.practitioner-intro .practitioner-bio{font-size:14px;margin-bottom:22px}.practitioner-directory .directory-next{max-width:480px;margin-top:29px;align-items:flex-start;flex-direction:column;gap:10px}.practitioner-directory .directory-next p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.gallery-image,.gallery-arrow,.gallery-dot{transition:none}}
