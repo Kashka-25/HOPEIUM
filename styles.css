@@ -22,3 +22,35 @@
 .ecosystem .lighthouse-i{width:.42em;height:1.55em;margin:0 .12em -.015em;flex:0 0 auto}
 .ecosystem .lighthouse-i svg{display:block;width:100%;height:100%;overflow:visible}
 @media(max-width:700px){.ecosystem .lighthouse-i{height:1.55em;width:.42em;margin-left:.12em;margin-right:.12em}}
+
+
+/* A calm, expandable explanation of the HOPEIUM connection experience. */
+.what-to-expect{background:linear-gradient(180deg,#203128 0%,#19271f 100%);padding:76px 8vw 82px;text-align:center;border-top:1px solid #d9b47718;border-bottom:1px solid #d9b47718}
+.what-to-expect>.overline{margin:0 0 12px}
+.what-to-expect>h2{font:500 clamp(34px,4.5vw,48px)/1.08 "Cormorant Garamond",serif;color:var(--cream);margin:0 0 30px}
+.connection-accordion{max-width:900px;margin:0 auto;text-align:left;border:1px solid #d9b47755;border-radius:18px;background:linear-gradient(120deg,#f5f0e509,#d9b47708);box-shadow:0 18px 55px #08120d35;overflow:hidden;transition:border-color .25s,background .25s}
+.connection-accordion[open]{border-color:#d9b4779c;background:linear-gradient(120deg,#f5f0e510,#d9b4770d)}
+.connection-accordion summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:20px;padding:23px 26px;min-height:94px;outline:none}
+.connection-accordion summary::-webkit-details-marker{display:none}
+.connection-accordion summary:focus-visible{outline:2px solid var(--gold2);outline-offset:-5px;border-radius:16px}
+.accordion-symbol{width:44px;height:44px;flex:0 0 44px;border:1px solid #d9b47770;border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-size:22px;background:#d9b47710}
+.accordion-label{display:grid;gap:5px;flex:1}
+.accordion-label strong{font:500 22px "Cormorant Garamond",serif;color:#f4ead7}
+.accordion-label small{font:12px/1.5 "DM Sans",sans-serif;color:#e9e3d4a8}
+.accordion-toggle{width:34px;height:34px;flex:0 0 34px;border:1px solid #d9b47765;border-radius:50%;display:grid;place-items:center;position:relative;transition:transform .3s,background .3s}
+.accordion-toggle span{position:absolute;width:12px;height:1px;background:var(--gold2);transition:transform .3s}
+.accordion-toggle span:last-child{transform:rotate(90deg)}
+.connection-accordion[open] .accordion-toggle{transform:rotate(180deg);background:#d9b47718}
+.connection-accordion[open] .accordion-toggle span:last-child{transform:rotate(0)}
+.accordion-content{padding:0 27px 26px;animation:accordion-reveal .35s ease both}
+@keyframes accordion-reveal{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+.expect-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #d9b47735;padding-top:26px}
+.expect-grid>div{padding:8px 24px 12px;border-right:1px solid #d9b47730}
+.expect-grid>div:first-child{padding-left:0}
+.expect-grid>div:last-child{border:0;padding-right:0}
+.expect-grid>div>span{font:italic 19px "Cormorant Garamond",serif;color:var(--gold)}
+.expect-grid h3{font:500 21px/1.1 "Cormorant Garamond",serif;color:#f1e6d2;margin:13px 0 9px}
+.expect-grid p{font:13px/1.75 "DM Sans",sans-serif;color:#e9e3d4b8;margin:0}
+.expect-note{max-width:690px;margin:23px auto 0;padding:15px 18px;border-left:2px solid #d9b47780;background:#d9b4770a;text-align:left;color:#e9e3d49c;font:12px/1.7 "DM Sans",sans-serif}
+@media(max-width:700px){.what-to-expect{padding:58px 5vw 62px}.what-to-expect>h2{margin-bottom:23px}.connection-accordion summary{gap:13px;padding:18px 16px;min-height:84px}.accordion-symbol{width:38px;height:38px;flex-basis:38px}.accordion-label strong{font-size:19px}.accordion-label small{font-size:11px}.accordion-content{padding:0 17px 19px}.expect-grid{grid-template-columns:1fr;gap:0;padding-top:13px}.expect-grid>div,.expect-grid>div:first-child,.expect-grid>div:last-child{padding:17px 2px;border-right:0;border-bottom:1px solid #d9b47730}.expect-grid>div:last-child{border-bottom:0}.expect-grid h3{margin:7px 0}.expect-note{margin-top:14px;padding:12px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.connection-accordion,.accordion-toggle,.accordion-toggle span{transition:none}.accordion-content{animation:none}}
