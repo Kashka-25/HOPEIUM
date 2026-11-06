@@ -1,0 +1,2 @@
+// Do not simulate a successful submission. Connect a secure form backend and practitioner notification before accepting requests.
+document.getElementById("request-form")?.addEventListener("submit",(event)=>{event.preventDefault();const note=document.getElementById("form-note");note.textContent="This form is not connected to the practitioner yet, so your request has not been sent. Please use the service's confirmed contact channel instead.";note.classList.add("form-warning");});
