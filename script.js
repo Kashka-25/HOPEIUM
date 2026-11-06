@@ -1,1 +1,1 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+// HOPEIUM landing page: keep interactions intentionally simple.
